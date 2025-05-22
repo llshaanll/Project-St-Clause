@@ -3,7 +3,7 @@ import Menu from './sub_components/Menu'
 
 const Header = () => {
   return (
-    <header className='fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30 py-2 bg-white'>
+    <header className='fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30 py-2 bg-transparent'>
       <a href="#home" className='flex-shrink-0'>
         <img 
           className='h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 transition-all duration-300' 

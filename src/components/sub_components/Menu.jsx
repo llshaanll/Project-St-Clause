@@ -26,7 +26,7 @@ const Menu = () => {
 
              {/* Animated Hover Effect  */}
             <motion.span 
-            className="absolute inset-0 bg-red-500 rounded-full -z-10"
+            className="absolute inset-0 bg-red-500/50 rounded-full -z-10"
             initial={{scale: 0}}
             animate={{scale: activeItem === lowerCaseItem ? 1 : 0}}
             transition={{
