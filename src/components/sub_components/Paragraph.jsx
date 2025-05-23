@@ -16,10 +16,10 @@ const Paragraph = ({ title, items, isBold }) => {
   });
   
   const visibility = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], [0, 1, 1, 0]);
-  const x = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [-400, 0, 0, -400]);
+  const x = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [-400, 0, 0, -400]);
 
   return (
-    <div className='relative flex items-center mb-8'>
+    <div className='relative h-screen flex items-start'>
       <motion.div
         ref={paragraphRef}
         initial={{ scale: 0, opacity: 0 }}

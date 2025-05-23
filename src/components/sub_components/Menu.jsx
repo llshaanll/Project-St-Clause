@@ -6,7 +6,7 @@ const Menu = () => {
 
   return (
     <nav className='flex flex-row items-center justify-center gap-6'>
-      {['About', 'Contact'].map((item, index)=>{
+      {['Contact'].map((item, index)=>{
         const lowerCaseItem = item.toLowerCase()
         return (
           <motion.a

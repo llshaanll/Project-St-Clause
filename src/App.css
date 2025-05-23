@@ -8,3 +8,16 @@ body, html, #root {
     margin: 0;
     padding: 0;
 }
+
+.hColor{
+    animation: headingColor ease-in-out 2000;
+}
+
+@keyframes headingColor {
+    from{
+        color: White
+    }
+    to{
+        color: black;
+    }
+}

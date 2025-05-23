@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import React, { useRef } from 'react'
 
-const Heading = ({ content }) => {
+const Heading = ({ content, value }) => {
     const headingRef = useRef()
     
     // Optional scroll effect (secondary)
@@ -10,7 +10,7 @@ const Heading = ({ content }) => {
         offset: ["start end", "end start"] // Match Paragraph's tracking range
     })
     
-    const y = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [-100, 0, 0, -100])
+    const y = useTransform(scrollYProgress, [0, 0.3, value, 1], [-100, 0, 0, -100])
 
     return (
         <h1 className='relative font-mono font-semibold text-4xl font-bold overflow-hidden'>
